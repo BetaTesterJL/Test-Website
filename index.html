@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+    <style>
+        /* CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Image Gallery</h1>
+        <div class="gallery">
+            <img src="https://preview.redd.it/bsvfw9dtxyta1.jpg?width=3703&format=pjpg&auto=webp&s=8dfe3bc399f506ab19cb274280dfe9f16d82162b" alt="Image 1">
+            <img src="https://i.redd.it/euzapb9o4l3c1.jpg" alt="Image 2">
+            <img src="https://preview.redd.it/0kl9kvknwswb1.jpg?width=3000&format=pjpg&auto=webp&s=481aef84edd76127db16efaf7c0439c878085739" alt="Image 3">
+            <!-- Add more images here -->
+        </div>
+    </div>
+</body>
+</html>
